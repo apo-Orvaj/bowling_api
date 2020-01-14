@@ -1,24 +1,11 @@
-# README
+# Ruby Bowling API
+A game of standard 10-pin American bowling, implemented in Ruby.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Bowling Rules
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- 10 turns allowed per game.
+- 2 rolls allowed per turn.
+- If bowler fails to knock both down, score for that turn is sum of its rolls rolls.
+- Spare: bowler knocks down 10 on roll #2. Score is 10 + next roll score.
+- Strike: bowler knocks down 10 on roll #1. Score is 10 + next 2 throw scores.
+- Spare or strike on last turn (turn 10), gets 1 or 2 bonus rolls respectively. These bonus rolls count toward the 10th turn.
